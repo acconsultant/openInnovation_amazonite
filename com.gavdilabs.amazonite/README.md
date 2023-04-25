@@ -43,3 +43,10 @@ Developer: _Allan Christensen_
     }
 }
 ```
+
+## Commands for Postgres
+```
+docker ps 
+docker exec -ti [container_id] bash
+psql -d openinno_db -U postgres
+```
