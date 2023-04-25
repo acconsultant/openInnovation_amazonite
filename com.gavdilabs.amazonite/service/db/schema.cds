@@ -9,3 +9,6 @@ entity User : cuid, managed {
     email: String(255);
 }
 
+entity Test : cuid {
+    test: String(255);
+}

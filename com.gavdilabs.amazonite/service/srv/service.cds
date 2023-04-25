@@ -20,6 +20,21 @@ service BasicService @(requires: 'authenticated-user') {
         }
     ]) as projection on schema.User;
 
+    entity Test @(restrict: [
+        {
+            grant: ['READ'],
+            to: ['USER']
+        },
+        {
+            grant: ['READ', 'UPDATE', 'CREATE'],
+            to: ['MANAGER']
+        },
+        {
+            grant: ['*'],
+            to: ['ADMIN']
+        }
+    ]) as projection on schema.Test;
+
     // ==================== ACTION IMPORTS ==========================
 
 

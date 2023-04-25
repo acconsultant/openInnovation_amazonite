@@ -12,6 +12,18 @@ export interface IUser {
     email: string;
 }
 
+export interface ITest {
+    ID: string;
+    createdAt?: Date;
+    createdBy?: string;
+    modifiedAt?: Date;
+    modifiedBy?: string;
+    firstName: string;
+    lastName: string;
+    userName: string;
+    email: string;
+}
+
 export interface INWProduct {
     ProductID: number;
     ProductName: string;
@@ -30,10 +42,12 @@ export interface INWProduct {
 
 export enum Entity {
     User = "BasicService.User",
-    NWProduct = "BasicService.NWProduct"
+    NWProduct = "BasicService.NWProduct",
+    Test = "BasicService.User.Test",
 }
 
 export enum SanitizedEntity {
     User = "User",
-    NWProduct = "NWProduct"
+    NWProduct = "NWProduct",
+    Test = "Test"
 }
