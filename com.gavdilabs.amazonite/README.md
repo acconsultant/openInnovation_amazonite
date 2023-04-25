@@ -44,7 +44,19 @@ Developer: _Allan Christensen_
 }
 ```
 
-## Commands for Postgres
+## Startup Thursday (Single Terminal With Tabs)
+```
+$ colima start
+$ cd /Users/allan/Documents/OpenInnovationDay/com.gavdilabs.amazonite/service
+$ docker-compose up
+NEW TAB (CDS SERVICE)
+$ npm run dev
+NEW TAB (UI APP)
+$ cd /Users/allan/Documents/OpenInnovationDay/com.gavdilabs.amazonite/app
+$ npm start
+```
+
+## Commands for Postgres Terminal Access
 ```
 docker ps 
 docker exec -ti [container_id] bash
