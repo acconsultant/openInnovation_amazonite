@@ -43,11 +43,13 @@ export interface INWProduct {
 export enum Entity {
     User = "BasicService.User",
     NWProduct = "BasicService.NWProduct",
-    Test = "BasicService.User.Test",
+    Test = "BasicService.Test",
+    SFUser = "BasicService.SFUser",
 }
 
 export enum SanitizedEntity {
     User = "User",
     NWProduct = "NWProduct",
-    Test = "Test"
+    Test = "Test",
+    SFUser = "SFUser"
 }

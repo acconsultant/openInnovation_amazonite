@@ -82,6 +82,19 @@
                     "url": "https://services.odata.org/v4/northwind/northwind.svc/"
                 }
             },
+            "sf": {
+                "kind": "odata-v2",
+                "model": "srv/external/sf",
+                "[development]": {
+                    "credentials": {
+                        "requestTimeout": 30000,
+                        "url": "https://api12preview.sapsf.eu/odata/v2/JobRequisition,User,UserPhoto,Candidate,JobApplication/",
+                        "authentication": "BasicAuthentication",
+                        "username": "GDSADMIN@gavdiasT3",
+                        "password": "TjWv7Sb@v7!l"
+                    }
+                }
+            },
             "db": {
                 "kind": "postgres",
                 "dialect": "plain"
