@@ -11,10 +11,10 @@ import Button from "sap/m/Button";
 /**
  * @namespace com.gavdilabs.ui5template.controller
  */
-export default class Main extends BaseController {
+export default class Role extends BaseController {
   private formatter = formatter;
 
-  public onSearchUser(oEvent): void {
+  public onSearchRole(oEvent): void {
     //ref relevant UI parts
     const listRoles = this.getView().byId("listRoles") as List;
     const listGroups = this.getView().byId("listGroups") as List;
@@ -28,12 +28,7 @@ export default class Main extends BaseController {
     });
 
     // Filter and bind the Roles List
-    const roleTemplate = new Button({
-      text: "{roleName}",
-      press: () => {
-        this.navTo("role"); //Navigate to Role Page
-      },
-    });
+    const roleTemplate = new Button({ text: "{roleName}" });
     roleTemplate.addStyleClass("sapUiTinyMarginBegin");
     listRoles.bindAggregation("items", {
       path: "/Roles",

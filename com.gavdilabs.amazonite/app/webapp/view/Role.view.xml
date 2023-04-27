@@ -1,4 +1,4 @@
-<mvc:View controllerName="com.gavdilabs.ui5template.controller.Main" displayBlock="true"
+<mvc:View controllerName="com.gavdilabs.ui5template.controller.Role" displayBlock="true"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc">
 	<Toolbar>
@@ -6,17 +6,13 @@
 		<ToolbarSpacer/>
 	</Toolbar>
 	<VBox class="sapUiLargeMargin">
-		<!-- Username input -->
+		<!-- Role input -->
 		<HBox alignItems="Center" alignContent="Center" justifyContent="Begin" class="sapUiTinyMargin">
-			<Label class="sapUiTinyMarginEnd" text="User:" />
-			<Input submit="onSearchUser" placeHolder="Enter username" />
-			<VBox id="userDetails">
-				<Text text="{firstName}" />
-				<Text text="{lastName}" />
-			</VBox>
+			<Label class="" text="Role:" />
+			<Input submit="onSearchRole" placeHolder="Enter role name" />
 		</HBox>
 		<HBox width="100%">
-			<VBox width="50%" class="sapUiMediumMarginTop">
+			<VBox width="50%">
 				<!-- List of Roles -->
 				<List width="80%" justifyContent="Center" class="sapUiTinyMargin" id="listRoles" headerText="Roles" growing="true" growingThreshold="10" growingScrollToLoad="false" />
 
@@ -26,7 +22,7 @@
 			</VBox>
 
 			<VBox width="50%">
-				<Input placeholder="Search" width="80%" class="sapUiTinyMarginBottom" />
+				<Input placeholder="Search" />
 				<!-- List of Groups -->
 				<List width="80%" justifyContent="Center" class="sapUiTinyMargin" id="listPermissions" headerText="Permissions" growing="false" growingThreshold="5" growingScrollToLoad="false" />
 			</VBox>

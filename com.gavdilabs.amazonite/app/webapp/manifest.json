@@ -78,17 +78,25 @@
                 "controlAggregation": "pages",
                 "async": true
             },
-            "routes": [
-                {
+            "routes": [{
                     "pattern": "",
                     "name": "main",
                     "target": "main"
+                },
+                {
+                    "pattern": "role",
+                    "name": "role",
+                    "target": "role"
                 }
             ],
             "targets": {
                 "main": {
                     "viewId": "main",
                     "viewName": "Main"
+                },
+                "role": {
+                    "viewId": "role",
+                    "viewName": "Role"
                 }
             }
         }
