@@ -12,3 +12,22 @@ entity User : cuid, managed {
 entity Test : cuid {
     test: String(255);
 }
+
+entity Roles : cuid {
+    roleName: String(255);
+    userName: String(100);
+}
+
+entity Groups : cuid {
+    groupName: String(255);
+    userName: String(100);
+}
+
+entity Permissions : cuid {
+    permissionName: String(255);
+    userName: String(100);
+}
+
+type TUSerRoleRaw {
+    getUserRolesReport: String;
+}
