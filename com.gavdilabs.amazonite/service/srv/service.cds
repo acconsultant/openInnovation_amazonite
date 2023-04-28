@@ -2,17 +2,25 @@ using {sf} from './external/sf';
 
 service EasyPermissionService @(requires: 'authenticated-user') {
 
+    // =================== LOACAL ENTITIES ==========================
+    entity Roles @(restrict: [
+        {
+            grant: ['*'],
+            to   : ['ADMIN']
+        }
+    ]) {
+        key userId : String(100);
+        roles : many {
+            roleName: String(100);
+            roleNameAccess: String(100);
+            roleNameTarget: String(100);
+        }
+    };
 
-    // =================== FUNCTION IMPORT LINKS ==========================
-    function SFFunctionUserRolesRaw(userId : String) returns String;
+    // =================== REMOTE 'FUNCTION IMPORT' PROJECTIONS ==========================
 
-    annotate SFFunctionUserRolesRaw with @(requires: [
-        'MANAGER',
-        'ADMIN'
-    ]);
-
-    // =================== ENTITIY LINKS ==========================
-    entity SFUser @(restrict: [
+    // =================== REMOTE ENTITIY PROJECTIONS ==========================
+    entity User @(restrict: [
         {
             grant: ['READ'],
             to   : ['USER']
@@ -20,8 +28,6 @@ service EasyPermissionService @(requires: 'authenticated-user') {
         {
             grant: [
                 'READ',
-                'UPDATE',
-                'CREATE'
             ],
             to   : ['MANAGER']
         },
@@ -30,9 +36,9 @@ service EasyPermissionService @(requires: 'authenticated-user') {
             to   : ['ADMIN']
         }
     ]) as projection on sf.User {
-        userId,
-        firstName,
-        lastName
+        key userId,
+            firstName,
+            lastName
     };
 
 

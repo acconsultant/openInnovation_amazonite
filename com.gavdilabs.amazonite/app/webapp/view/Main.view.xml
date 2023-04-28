@@ -10,15 +10,19 @@
 		<HBox alignItems="Center" alignContent="Center" justifyContent="Begin" class="sapUiTinyMargin">
 			<Label class="sapUiTinyMarginEnd" text="User:" />
 			<Input submit="onSearchUser" placeHolder="Enter username" />
-			<VBox id="userDetails">
-				<Text text="{firstName}" />
-				<Text text="{lastName}" />
-			</VBox>
+			<HBox class="sapUiTinyMargin">
+				<Text text="{UserDetails>/firstName}" />
+				<Text text="{UserDetails>/lastName}" />
+			</HBox>
 		</HBox>
 		<HBox width="100%">
 			<VBox width="50%" class="sapUiMediumMarginTop">
 				<!-- List of Roles -->
-				<List width="80%" justifyContent="Center" class="sapUiTinyMargin" id="listRoles" headerText="Roles" growing="true" growingThreshold="10" growingScrollToLoad="false" />
+				<List width="80%" justifyContent="Center" class="sapUiTinyMargin" items="{Roles>/roles/}" headerText="Roles" growing="true" growingThreshold="10" growingScrollToLoad="false">
+					<items>
+						<StandardListItem title="{Roles>roleName}" />
+					</items>
+				</List>
 
 				<!-- List of Groups -->
 				<List width="80%" justifyContent="Center" class="sapUiTinyMargin" id="listGroups" headerText="Groups" growing="true" growingThreshold="10" growingScrollToLoad="false" />

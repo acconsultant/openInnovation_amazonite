@@ -40,10 +40,12 @@
         "cds-pg": "0.1.36",
         "cds-routing-handlers": "^3.0.7",
         "express": "^4.17.3",
+        "fast-xml-parser": "^4.2.2",
         "passport": "^0.5.2",
         "reflect-metadata": "^0.1.13",
         "sap-cf-axios": "^0.3.6",
-        "winston": "^3.8.2"
+        "winston": "^3.8.2",
+        "common": "file:../common"
     },
     "devDependencies": {
         "@types/chai": "^4.3.4",
