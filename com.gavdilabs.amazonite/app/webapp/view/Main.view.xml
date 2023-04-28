@@ -17,12 +17,14 @@
 		</HBox>
 		<HBox width="100%">
 			<VBox width="50%" class="sapUiMediumMarginTop">
-				<!-- List of Roles -->
-				<List width="80%" justifyContent="Center" class="sapUiTinyMargin" items="{Roles>/roles/}" headerText="Roles" growing="true" growingThreshold="10" growingScrollToLoad="false">
-					<items>
-						<StandardListItem title="{Roles>roleName}" />
-					</items>
-				</List>
+				<ScrollContainer height="300px" width="80%" vertical="true" horizontal="false" focusable="true" class="sapUiTinyMarginBottom">
+					<!-- List of Roles -->
+					<List width="100%" justifyContent="Center" class="sapUiTinyMargin" items="{Roles>/roles/}" headerText="Roles" growing="false" growingThreshold="10" growingScrollToLoad="true">
+						<items>
+							<StandardListItem title="{Roles>roleName}" />
+						</items>
+					</List>
+				</ScrollContainer>
 
 				<!-- List of Groups -->
 				<List width="80%" justifyContent="Center" class="sapUiTinyMargin" id="listGroups" headerText="Groups" growing="true" growingThreshold="10" growingScrollToLoad="false" />
