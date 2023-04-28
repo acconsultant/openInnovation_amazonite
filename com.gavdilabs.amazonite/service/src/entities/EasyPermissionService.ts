@@ -1,27 +1,4 @@
-import { IAdvance, IDomainEventAlert, IONB2ProcessTrigger, IOneTimeDeduction, IPicklistOption, IONB2BuddyActivity, ISpotAward, IRightToReturn, ICompetencyRating, IComplianceProcessTask, IONB2ProcessTask, IFOCostCenter, ICust_CC_UserComp, ICust_CC_ProfileAssignment, ICust_CC_UserCompDocument, IComplianceDocumentFlow, IAutoDelegateDetail, IAutoDelegateConfig, IEmpEmployment, IDRTMPurgeFreeze, ISkillProfile, ICust_Performancedata, IFOBusinessUnit, IFODepartment, IFODivision, IPosition, IPayrollDataMaintenanceTask, IONB2EquipmentActivity, IONB2Process, IMentoringProgramMatchedParticipant, INominationTarget, ITalentPool, IPersonKey, IAssignedComplianceForm, IComplianceFormSignature, IAchievement, IActivity, IComplianceFormData, IONB2DataCollectionUserConfig, ITimeManagementAlert, IAccrualCalculationBase, IBudgetGroup, IDataReplicationProxy, IEmployeePayrollRunResults, IEmployeeTimeGroup, IEmployeeTime, IHRISChangeLogDataReplication, IPositionRightToReturn, ISpotAwardBudget, ISpotAwardRedemption, ITemporaryTimeInformation, ITimeAccount, ITimeAccountSnapshot, IWorkSchedule, IComplianceProcess, IOnboardingInfo, IUserPermissions, IAdvancesAccumulation, INonRecurringPayment, IRecurringDeduction, IWorkOrder, IEmpCostDistribution, IEmployeeDataReplicationConfirmation, IEmployeeDataReplicationElement, IEmployeeDataReplicationNotification, IHireDateChange, ISecondaryAssignmentsItem, IPaymentInformationV3 } from "./sf";
-
-export interface IUser {
-  ID: string;
-  createdAt?: Date;
-  createdBy?: string;
-  modifiedAt?: Date;
-  modifiedBy?: string;
-  firstName: string;
-  lastName: string;
-  userName: string;
-  email: string;
-}
-
-export interface ITest {
-  ID: string;
-  test: string;
-}
-
-export interface IRoles {
-  ID: string;
-  roleName: string;
-  userName: string;
-}
+import { IAccrualCalculationBase, IAchievement, IActivity, IAdvance, IAdvancesAccumulation, IAssignedComplianceForm, IAutoDelegateConfig, IAutoDelegateDetail, IBudgetGroup, ICompetencyRating, IComplianceDocumentFlow, IComplianceFormData, IComplianceFormSignature, IComplianceProcess, IComplianceProcessTask, ICust_CC_ProfileAssignment, ICust_CC_UserComp, ICust_CC_UserCompDocument, ICust_Performancedata, IDRTMPurgeFreeze, IDataReplicationProxy, IDomainEventAlert, IEmpCostDistribution, IEmpEmployment, IEmployeeDataReplicationConfirmation, IEmployeeDataReplicationElement, IEmployeeDataReplicationNotification, IEmployeePayrollRunResults, IEmployeeTime, IEmployeeTimeGroup, IFOBusinessUnit, IFOCostCenter, IFODepartment, IFODivision, IHRISChangeLogDataReplication, IHireDateChange, IMentoringProgramMatchedParticipant, INominationTarget, INonRecurringPayment, IONB2BuddyActivity, IONB2DataCollectionUserConfig, IONB2EquipmentActivity, IONB2Process, IONB2ProcessTask, IONB2ProcessTrigger, IOnboardingInfo, IOneTimeDeduction, IPaymentInformationV3, IPayrollDataMaintenanceTask, IPersonKey, IPicklistOption, IPosition, IPositionRightToReturn, IRecurringDeduction, IRightToReturn, ISecondaryAssignmentsItem, ISkillProfile, ISpotAward, ISpotAwardBudget, ISpotAwardRedemption, ITalentPool, ITemporaryTimeInformation, ITimeAccount, ITimeAccountSnapshot, ITimeManagementAlert, IUserPermissions, IWorkOrder, IWorkSchedule } from "./sf";
 
 export interface ISFUser {
   userId: string;
@@ -270,27 +247,21 @@ export interface ISFUser {
   workerOfPaymentInformationV3Nav?: IPaymentInformationV3[];
 }
 
-export enum FuncSFUserRoles {
-  name = "SFUserRoles",
+export enum FuncSFFunctionUserRolesRaw {
+  name = "SFFunctionUserRolesRaw",
   paramUserId = "userId",
 }
 
-export interface IFuncSFUserRolesParams {
+export interface IFuncSFFunctionUserRolesRawParams {
   userId: string;
 }
 
-export type FuncSFUserRolesReturn = String;
+export type FuncSFFunctionUserRolesRawReturn = string;
 
 export enum Entity {
-  User = "BasicService.User",
-  Test = "BasicService.Test",
-  Roles = "BasicService.Roles",
-  SFUser = "BasicService.SFUser",
+  SFUser = "EasyPermissionService.SFUser",
 }
 
 export enum SanitizedEntity {
-  User = "User",
-  Test = "Test",
-  Roles = "Roles",
   SFUser = "SFUser",
 }

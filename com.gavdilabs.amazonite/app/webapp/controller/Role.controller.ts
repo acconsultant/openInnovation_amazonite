@@ -14,10 +14,13 @@ import Button from "sap/m/Button";
 export default class Role extends BaseController {
   private formatter = formatter;
 
+  public onNavBack(): void {
+    history.back();
+  }
+
   public onSearchRole(oEvent): void {
     //ref relevant UI parts
-    const listRoles = this.getView().byId("listRoles") as List;
-    const listGroups = this.getView().byId("listGroups") as List;
+    const listGrantingAndTarget = this.getView().byId("listGrantingAndTarget") as List;
     const listPermissions = this.getView().byId("listPermissions") as List;
 
     // Common filter for Lists
@@ -30,7 +33,7 @@ export default class Role extends BaseController {
     // Filter and bind the Roles List
     const roleTemplate = new Button({ text: "{roleName}" });
     roleTemplate.addStyleClass("sapUiTinyMarginBegin");
-    listRoles.bindAggregation("items", {
+    listGrantingAndTarget.bindAggregation("items", {
       path: "/Roles",
       template: new CustomListItem({
         content: [roleTemplate],
@@ -38,14 +41,6 @@ export default class Role extends BaseController {
       filters: filter,
     });
 
-    // Filter and bind the Groups List
-    listGroups.bindAggregation("items", {
-      path: "/Groups",
-      template: new StandardListItem({
-        title: "{groupName}",
-      }),
-      filters: filter,
-    });
     // Filter and bind the Groups List
     listPermissions.bindAggregation("items", {
       path: "/Permissions",
