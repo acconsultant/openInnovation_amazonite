@@ -19,6 +19,8 @@ export default class Component extends UIComponent {
 
     this.setModel(models.createDeviceModel(), "device");
 
+    this.setModel(models.createApplicationModel(), "app");
+
     // create the views based on the url/hash
     this.getRouter().initialize();
 
@@ -52,6 +54,10 @@ export default class Component extends UIComponent {
     return this.contentDensityClass;
   }
 
+  public setIsBusy(isBusy: boolean): void {
+    (this.getModel("app") as JSONModel).setProperty("/isBusy", isBusy);
+  }
+
   private fillTargetAndGranting() {
     this.setModel(
       new JSONModel([
@@ -73,28 +79,28 @@ export default class Component extends UIComponent {
           permissionName: "Objectives tab permission",
         },
         {
-			permissionName: "Calibration tab permission",
+          permissionName: "Calibration tab permission",
         },
         {
-			permissionName: "Permission to Create forms (Req Template)",
+          permissionName: "Permission to Create forms (Req Template)",
         },
         {
-			permissionName: "Position (view)",
+          permissionName: "Position (view)",
         },
         {
-			permissionName: "Job Information (view history)",
+          permissionName: "Job Information (view history)",
         },
         {
-			permissionName: "Compensation Information (view history)",
+          permissionName: "Compensation Information (view history)",
         },
         {
-			permissionName: "Dependents (view/edit)",
+          permissionName: "Dependents (view/edit)",
         },
         {
-			permissionName: "User Login",
+          permissionName: "User Login",
         },
         {
-			permissionName: "Directory",
+          permissionName: "Directory",
         },
       ]),
       "GrantingTargetPermissions"

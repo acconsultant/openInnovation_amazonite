@@ -9,7 +9,9 @@ import History from "sap/ui/core/routing/History";
 import JSONModel from "sap/ui/model/json/JSONModel";
 import ODataModel from "sap/ui/model/odata/v4/ODataModel";
 import ODataContextBinding from "sap/ui/model/odata/v4/ODataContextBinding";
-import { IGetByKeyParams } from "../model/models";
+import { IGetByKeyParams, ModelNames } from "../model/models";
+import MessageBox from "sap/m/MessageBox";
+import { IRolesOutRoot } from "common";
 
 /**
  * @namespace com.gavdilabs.ui5template.controller
@@ -120,5 +122,44 @@ export default abstract class BaseController extends Controller {
     let dataObject = await this.getByKey2Object<T>(path, parameters);
     //Loading only a single context or a list?
     this.setModel(new JSONModel(dataObject as object), modelName);
+  }
+
+  /**
+   * Private function for filling the roles list
+   * @param userId entered username in UI
+   */
+  public async fillUserRoles(userId: string): Promise<void> {
+    if (this.getModel(ModelNames.ROLES)) {
+      (this.getModel(ModelNames.ROLES) as JSONModel).setData({});
+    }
+
+    //Get user roles
+    try {
+      await this.getByKey2JSONModel<IRolesOutRoot>(
+        `/Roles('${userId}')`,
+        ModelNames.ROLES,
+        undefined
+      );
+    } catch {
+      return Promise.reject("Failed to load user roles");
+    }
+  }
+
+  public async fillUserDetails(userId: string): Promise<void> {
+    //Clear models - if there
+    if (this.getModel(ModelNames.USER_DETAILS)) {
+      (this.getModel(ModelNames.USER_DETAILS) as JSONModel).setData({});
+    }
+
+    //Get User details
+    try {
+      return await this.getByKey2JSONModel(
+        `/User('${userId}')`,
+        ModelNames.USER_DETAILS,
+        undefined
+      );
+    } catch {
+      return Promise.reject("Failed to load user details");
+    }
   }
 }

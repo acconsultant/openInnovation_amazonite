@@ -9,17 +9,18 @@
 		<!-- Username input -->
 		<HBox alignItems="Center" alignContent="Center" justifyContent="Begin" class="sapUiTinyMargin">
 			<Label class="sapUiTinyMarginEnd" text="User:" />
-			<Input submit="onSearchUser" placeHolder="Enter username" />
+			<Input enabled="{=${app>/isBusy} === false}" submit="onSearchUser" placeHolder="Enter username" />
 			<HBox class="sapUiTinyMargin">
-				<Text text="{UserDetails>/firstName}" />
-				<Text text="{UserDetails>/lastName}" />
+				<Text class="sapUiTinyMarginEnd" text="{UserDetails>/firstName}" />
+				<Text class="sapUiTinyMarginEnd" text="{UserDetails>/lastName}" />
+				<BusyIndicator size="0.6rem" class="sapUiMediumMarginBegin" visible="{app>/isBusy}" />
 			</HBox>
 		</HBox>
 		<HBox width="100%">
 			<VBox width="50%" class="sapUiMediumMarginTop">
 				<ScrollContainer height="300px" width="80%" vertical="true" horizontal="false" focusable="true" class="sapUiTinyMarginBottom">
 					<!-- List of Roles -->
-					<List width="100%" justifyContent="Center" class="sapUiTinyMargin" items="{Roles>/roles/}" headerText="Roles" growing="false" growingThreshold="10" growingScrollToLoad="true">
+					<List busyIndicatorDelay="200" enableBusyIndicator="true" width="100%" justifyContent="Center" class="sapUiTinyMargin" items="{Roles>/roles/}" headerText="Roles" growing="false" growingThreshold="10" growingScrollToLoad="true">
 						<items>
 							<StandardListItem title="{Roles>roleName}" />
 						</items>

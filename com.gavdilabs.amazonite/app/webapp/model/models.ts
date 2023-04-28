@@ -16,9 +16,21 @@ export interface IGetByKeyParams {
   $$updateGroupId?: string;
 }
 
+export enum ModelNames {
+  ROLES = "Roles",
+  USER_DETAILS = "UserDetails"
+}
+
 export default {
   createDeviceModel: () => {
     const oModel = new JSONModel(Device);
+    oModel.setDefaultBindingMode(BindingMode.OneWay);
+    return oModel;
+  },
+  createApplicationModel: () => {
+    const oModel = new JSONModel({
+		isBusy: false
+	});
     oModel.setDefaultBindingMode(BindingMode.OneWay);
     return oModel;
   },
