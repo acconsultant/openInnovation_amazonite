@@ -1,7 +1,7 @@
 import { Request } from "@sap/cds/apis/services";
 import { Handler, OnCreate, OnDelete, OnRead, OnUpdate, Req } from "cds-routing-handlers";
 import { Inject, Service } from "typedi";
-import { SanitizedEntity } from "../../entities/BasicService";
+import { SanitizedEntity } from "../../entities/EasyPermissionService";
 import { SanitizedEntity as SFEntity } from "../../entities/sf";
 import SF from "../../services/SF";
 

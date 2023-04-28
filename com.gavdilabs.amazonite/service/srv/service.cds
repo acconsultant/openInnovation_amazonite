@@ -5,7 +5,11 @@ service EasyPermissionService @(requires: 'authenticated-user') {
 
     // =================== FUNCTION IMPORT LINKS ==========================
     function SFFunctionUserRolesRaw(userId : String) returns String;
-    annotate SFFunctionUserRolesRaw with @(requires: ['MANAGER', 'ADMIN']);
+
+    annotate SFFunctionUserRolesRaw with @(requires: [
+        'MANAGER',
+        'ADMIN'
+    ]);
 
     // =================== ENTITIY LINKS ==========================
     entity SFUser @(restrict: [
@@ -25,7 +29,11 @@ service EasyPermissionService @(requires: 'authenticated-user') {
             grant: ['*'],
             to   : ['ADMIN']
         }
-    ]) as projection on sf.User;
+    ]) as projection on sf.User {
+        userId,
+        firstName,
+        lastName
+    };
 
 
 }
