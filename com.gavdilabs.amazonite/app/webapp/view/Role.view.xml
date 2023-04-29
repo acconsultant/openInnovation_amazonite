@@ -1,0 +1,49 @@
+<mvc:View controllerName="com.gavdilabs.ui5template.controller.Role" displayBlock="true"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Toolbar>
+		<Button type="Back" press="onNavBack" />
+		<Title text="User Access Analyzer" />
+		<ToolbarSpacer/>
+	</Toolbar>
+	<VBox class="sapUiLargeMargin">
+		<!-- Role input -->
+		<HBox alignItems="Center" alignContent="Center" justifyContent="Begin" class="sapUiTinyMargin">
+			<Label class="" text="Role:" />
+			<Input submit="onSearchRole" placeHolder="Enter role name" />
+		</HBox>
+		<HBox width="100%">
+			<VBox width="50%">
+				<!-- List of Granting&Target -->
+				<Table width="80%" items="{GrantingTarget>/}" justifyContent="Center" class="sapUiTinyMargin" id="listGrantingAndTarget" headerText="Permission Groups" growing="true" growingThreshold="10" growingScrollToLoad="false">
+					<columns>
+						<Column width="50%">
+							<Text text="Granting" />
+						</Column>
+						<Column width="50%">
+							<Text text="Target" />
+						</Column>
+					</columns>
+					<items>
+						<ColumnListItem vAlign="Middle">
+							<cells>
+								<Text text="{GrantingTarget>grant}" />
+								<Text text="{GrantingTarget>target}" />
+							</cells>
+						</ColumnListItem>
+					</items>
+				</Table>
+
+			</VBox>
+
+			<VBox width="50%">
+				<Input placeholder="Search" />
+				<!-- List of Groups -->
+				<List width="80%" items="{GrantingTargetPermissions>/}" justifyContent="Center" class="sapUiTinyMargin" id="listPermissions" headerText="Permissions" growing="false" growingThreshold="5" growingScrollToLoad="false" >
+					<StandardListItem title="{GrantingTargetPermissions>permissionName}" />
+				</List>
+			</VBox>
+		</HBox>
+
+	</VBox>
+</mvc:View>

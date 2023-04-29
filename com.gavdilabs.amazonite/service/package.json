@@ -1,7 +1,7 @@
 {
-    "name": "basiccapts",
+    "name": "easypermissions",
     "version": "1.0.0",
-    "description": "A simple CAP project.",
+    "description": "GL Easy Permissions",
     "repository": "<Add your repository here>",
     "private": true,
     "engines": {
@@ -9,7 +9,6 @@
     },
     "scripts": {
         "start": "node ./srv/server.js",
-        "start:db": "docker-compose up",
         "dev": "run-s build:cds debug",
         "debug": "nodemon",
         "test": "mocha -r ts-node/register tests/**/*.spec.ts",
@@ -19,10 +18,6 @@
         "coverage": "nyc npm run test",
         "lint": "eslint . --ext .ts --fix",
         "prettier:format": "prettier --config .prettierrc 'src/**/*.ts' --write",
-        "db:start": "docker-compose up",
-        "db:create": "cds-dbm deploy --create-db basic_db",
-        "db:schema": "cds-dbm deploy",
-        "db:load": "cds-dbm deploy --load-via delta",
         "build": "run-s build:cds build:ts build:clean",
         "build:prod": "run-s build:cds:prod build:ts build:clean",
         "build:cds": "cds build",
@@ -45,10 +40,12 @@
         "cds-pg": "0.1.36",
         "cds-routing-handlers": "^3.0.7",
         "express": "^4.17.3",
+        "fast-xml-parser": "^4.2.2",
         "passport": "^0.5.2",
         "reflect-metadata": "^0.1.13",
         "sap-cf-axios": "^0.3.6",
-        "winston": "^3.8.2"
+        "winston": "^3.8.2",
+        "common": "file:../common"
     },
     "devDependencies": {
         "@types/chai": "^4.3.4",
@@ -75,47 +72,17 @@
     },
     "cds": {
         "requires": {
-            "northwind": {
-                "kind": "odata",
-                "model": "srv/external/northwind",
-                "credentials": {
-                    "url": "https://services.odata.org/v4/northwind/northwind.svc/"
-                }
-            },
             "sf": {
                 "kind": "odata-v2",
                 "model": "srv/external/sf",
                 "[development]": {
                     "credentials": {
                         "requestTimeout": 30000,
-                        "url": "https://api12preview.sapsf.eu/odata/v2/JobRequisition,User,UserPhoto,Candidate,JobApplication/",
+                        "url": "https://api12preview.sapsf.eu/odata/v2/",
                         "authentication": "BasicAuthentication",
                         "username": "GDSADMIN@gavdiasT3",
                         "password": "TjWv7Sb@v7!l"
                     }
-                }
-            },
-            "db": {
-                "kind": "postgres",
-                "dialect": "plain"
-            },
-            "postgres": {
-                "impl": "cds-pg",
-                "model": [
-                    "srv"
-                ]
-            }
-        },
-        "migrations": {
-            "db": {
-                "schema": {
-                    "default": "public",
-                    "clone": "_cdsdbm_clone",
-                    "reference": "_cdsdbm_ref"
-                },
-                "deploy": {
-                    "tmpFile": "tmp/_autodeploy.json",
-                    "undeployFile": "db/undeploy.json"
                 }
             }
         }

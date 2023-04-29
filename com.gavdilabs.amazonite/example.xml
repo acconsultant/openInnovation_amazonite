@@ -1,0 +1,399 @@
+<?xml version=\"1.0\" encoding=\"UTF-8\"?><!DOCTYPE user-role-granting PUBLIC \"-//SuccessFactors, Inc.//DTD Permission Config//EN\" \"user-role.dtd\">
+<user-role-granting>
+    <user id=\"GDSADMIN\">
+        <role id=\"21\" name=\"SUPER_ADMIN\">
+            <rule id=\"21\" last-modified-by=\"\" last-modified-date=\"\">
+                <access-group created-by=\"CAJ\" created-date=\"2022-10-11\" id=\"2522\" last-modified-by=\"RAM\" last-modified-date=\"2023-04-20\" member-count=\"52\" name=\"SUPER ADMIN\">
+                    <include-people-pool><![CDATA[(std_username = 68 AND IBT AND dpa AND vmu AND RAM AND SLJ AND mlu AND JSS AND wmu AND vin AND vsu AND rak AND smu AND COEREWARD AND ljo AND alc AND can AND NJA AND ALA AND BAN AND SKO AND dla AND JKH AND PNA AND tbo AND gmo AND jpi AND flo AND hsa AND mem AND MEM AND amm AND daa AND ijn AND IJN AND HCO AND NSI AND CAJ AND afa AND cab AND cbo AND jaa AND aif AND dsb AND cpa AND shs AND mye AND aih AND ALV AND bdo AND per AND MOK AND KAJ AND RSA AND CAL AND RLU AND MZI AND MRK AND AHE AND CSA)]]></include-people-pool>
+                    <include-people-pool><![CDATA[(std_username = COMPADMIN AND IPSADMIN AND SFADMIN AND GDSADMIN AND ONBADMIN)]]></include-people-pool>
+                </access-group>
+                <target-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </target-group>
+                <relationship/>
+                <include-self><![CDATA[false]]></include-self>
+                <exclude-login-user><![CDATA[false]]></exclude-login-user>
+                <access-group-level><![CDATA[0]]></access-group-level>
+                <target-group-level><![CDATA[0]]></target-group-level>
+                <filter/>
+                <target-population><![CDATA[EVERYONE]]></target-population>
+            </rule>
+        </role>
+        <role id=\"61\" name=\"CDP-SUC ESS\">
+            <rule id=\"42\" last-modified-by=\"\" last-modified-date=\"\">
+                <access-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </access-group>
+                <target-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </target-group>
+                <relationship/>
+                <include-self><![CDATA[false]]></include-self>
+                <exclude-login-user><![CDATA[false]]></exclude-login-user>
+                <access-group-level><![CDATA[0]]></access-group-level>
+                <target-group-level><![CDATA[0]]></target-group-level>
+                <filter><![CDATA[SELF]]></filter>
+                <target-population><![CDATA[everyone in SELF, EVERYONE]]></target-population>
+            </rule>
+        </role>
+        <role id=\"65\" name=\"LMS ALL\">
+            <rule id=\"46\" last-modified-by=\"\" last-modified-date=\"\">
+                <access-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </access-group>
+                <target-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </target-group>
+                <relationship/>
+                <include-self><![CDATA[false]]></include-self>
+                <exclude-login-user><![CDATA[false]]></exclude-login-user>
+                <access-group-level><![CDATA[0]]></access-group-level>
+                <target-group-level><![CDATA[0]]></target-group-level>
+                <filter/>
+                <target-population><![CDATA[EVERYONE]]></target-population>
+            </rule>
+        </role>
+        <role id=\"67\" name=\"FD_USER_LOGIN\">
+            <rule id=\"47\" last-modified-by=\"\" last-modified-date=\"\">
+                <access-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </access-group>
+                <target-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </target-group>
+                <relationship/>
+                <include-self><![CDATA[false]]></include-self>
+                <exclude-login-user><![CDATA[false]]></exclude-login-user>
+                <access-group-level><![CDATA[0]]></access-group-level>
+                <target-group-level><![CDATA[0]]></target-group-level>
+                <filter/>
+                <target-population><![CDATA[EVERYONE]]></target-population>
+            </rule>
+        </role>
+        <role id=\"68\" name=\"EP ESS - OTHERS\">
+            <rule id=\"48\" last-modified-by=\"\" last-modified-date=\"\">
+                <access-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </access-group>
+                <target-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </target-group>
+                <relationship/>
+                <include-self><![CDATA[false]]></include-self>
+                <exclude-login-user><![CDATA[false]]></exclude-login-user>
+                <access-group-level><![CDATA[0]]></access-group-level>
+                <target-group-level><![CDATA[0]]></target-group-level>
+                <filter/>
+                <target-population><![CDATA[EVERYONE]]></target-population>
+            </rule>
+        </role>
+        <role id=\"69\" name=\"EP ESS\">
+            <rule id=\"49\" last-modified-by=\"\" last-modified-date=\"\">
+                <access-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </access-group>
+                <target-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </target-group>
+                <relationship/>
+                <include-self><![CDATA[false]]></include-self>
+                <exclude-login-user><![CDATA[false]]></exclude-login-user>
+                <access-group-level><![CDATA[0]]></access-group-level>
+                <target-group-level><![CDATA[0]]></target-group-level>
+                <filter><![CDATA[SELF]]></filter>
+                <target-population><![CDATA[everyone in SELF, EVERYONE]]></target-population>
+            </rule>
+        </role>
+        <role id=\"81\" name=\"PM-GM ESS\">
+            <rule id=\"61\" last-modified-by=\"\" last-modified-date=\"\">
+                <access-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </access-group>
+                <target-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </target-group>
+                <relationship/>
+                <include-self><![CDATA[false]]></include-self>
+                <exclude-login-user><![CDATA[false]]></exclude-login-user>
+                <access-group-level><![CDATA[0]]></access-group-level>
+                <target-group-level><![CDATA[0]]></target-group-level>
+                <filter><![CDATA[SELF]]></filter>
+                <target-population><![CDATA[everyone in SELF, EVERYONE]]></target-population>
+            </rule>
+        </role>
+        <role id=\"121\" name=\"EC_ESS\">
+            <rule id=\"101\" last-modified-by=\"\" last-modified-date=\"\">
+                <access-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </access-group>
+                <target-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </target-group>
+                <relationship/>
+                <include-self><![CDATA[false]]></include-self>
+                <exclude-login-user><![CDATA[false]]></exclude-login-user>
+                <access-group-level><![CDATA[0]]></access-group-level>
+                <target-group-level><![CDATA[0]]></target-group-level>
+                <filter><![CDATA[SELF]]></filter>
+                <target-population><![CDATA[everyone in SELF, EVERYONE]]></target-population>
+            </rule>
+        </role>
+        <role id=\"183\" name=\"RCM_Employee\">
+            <rule id=\"342\" last-modified-by=\"\" last-modified-date=\"\">
+                <access-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </access-group>
+                <target-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </target-group>
+                <relationship/>
+                <include-self><![CDATA[false]]></include-self>
+                <exclude-login-user><![CDATA[false]]></exclude-login-user>
+                <access-group-level><![CDATA[0]]></access-group-level>
+                <target-group-level><![CDATA[0]]></target-group-level>
+                <filter/>
+                <target-population><![CDATA[EVERYONE]]></target-population>
+            </rule>
+        </role>
+        <role id=\"261\" name=\"Extension Service Role\">
+            <rule id=\"181\" last-modified-by=\"\" last-modified-date=\"\">
+                <access-group created-by=\"\" created-date=\"\" id=\"2862\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"2\" name=\"Extension Service Group\">
+                    <include-people-pool><![CDATA[(user = ExtensionServiceUser AND GDSADMIN)]]></include-people-pool>
+                </access-group>
+                <target-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </target-group>
+                <relationship/>
+                <include-self><![CDATA[false]]></include-self>
+                <exclude-login-user><![CDATA[false]]></exclude-login-user>
+                <access-group-level><![CDATA[0]]></access-group-level>
+                <target-group-level><![CDATA[0]]></target-group-level>
+                <filter/>
+                <target-population><![CDATA[EVERYONE]]></target-population>
+            </rule>
+        </role>
+        <role id=\"262\" name=\"Extensions Admin\">
+            <rule id=\"182\" last-modified-by=\"\" last-modified-date=\"\">
+                <access-group created-by=\"\" created-date=\"\" id=\"2863\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"2\" name=\"Extensions Administrators\">
+                    <include-people-pool><![CDATA[(user = GDSADMIN AND JQJ)]]></include-people-pool>
+                </access-group>
+                <target-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </target-group>
+                <relationship/>
+                <include-self><![CDATA[false]]></include-self>
+                <exclude-login-user><![CDATA[false]]></exclude-login-user>
+                <access-group-level><![CDATA[0]]></access-group-level>
+                <target-group-level><![CDATA[0]]></target-group-level>
+                <filter/>
+                <target-population><![CDATA[EVERYONE]]></target-population>
+            </rule>
+        </role>
+        <role id=\"366\" name=\"Everyone (System Role)\">
+            <rule id=\"286\" last-modified-by=\"\" last-modified-date=\"\">
+                <access-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </access-group>
+                <target-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </target-group>
+                <relationship/>
+                <include-self><![CDATA[false]]></include-self>
+                <exclude-login-user><![CDATA[false]]></exclude-login-user>
+                <access-group-level><![CDATA[0]]></access-group-level>
+                <target-group-level><![CDATA[0]]></target-group-level>
+                <filter/>
+                <target-population><![CDATA[EVERYONE]]></target-population>
+            </rule>
+        </role>
+        <role id=\"523\" name=\"GLCC_Learner\">
+            <rule id=\"480\" last-modified-by=\"\" last-modified-date=\"\">
+                <access-group created-by=\"tbo\" created-date=\"2022-11-24\" id=\"3883\" last-modified-by=\"daa\" last-modified-date=\"2023-01-25\" member-count=\"105\" name=\"GLCC_Learner\">
+                    <include-people-pool><![CDATA[(user = JSS AND mmanson AND mmoore AND tbo AND hsa AND flo)]]></include-people-pool>
+                    <include-people-pool><![CDATA[(std_country = Denmark AND Germany AND United Arab Emirates AND France AND Belgium AND United Kingdom)]]></include-people-pool>
+                    <include-people-pool><![CDATA[(std_custom01 = OmniCorp France (CX_FRA) AND OmniCorp Denmark (OC_DNK) AND OmniCorp Denmark (CX_DNK) AND Company X Belgium (CX_BEL) AND Gavdi Labs AND Company X Denmark (CX_DNK) AND OmniCorp Germany (OC_DEU) AND Company X United Kingdom (CX_GBR) AND N/A AND OmniCorp United Kingdom (OC_GBR))]]></include-people-pool>
+                </access-group>
+                <target-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </target-group>
+                <relationship/>
+                <include-self><![CDATA[false]]></include-self>
+                <exclude-login-user><![CDATA[false]]></exclude-login-user>
+                <access-group-level><![CDATA[0]]></access-group-level>
+                <target-group-level><![CDATA[0]]></target-group-level>
+                <filter/>
+                <target-population><![CDATA[EVERYONE]]></target-population>
+            </rule>
+        </role>
+        <role id=\"563\" name=\"COMP_ESS\">
+            <rule id=\"525\" last-modified-by=\"\" last-modified-date=\"\">
+                <access-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </access-group>
+                <target-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </target-group>
+                <relationship/>
+                <include-self><![CDATA[false]]></include-self>
+                <exclude-login-user><![CDATA[false]]></exclude-login-user>
+                <access-group-level><![CDATA[0]]></access-group-level>
+                <target-group-level><![CDATA[0]]></target-group-level>
+                <filter><![CDATA[SELF]]></filter>
+                <target-population><![CDATA[everyone in SELF, EVERYONE]]></target-population>
+            </rule>
+        </role>
+        <role id=\"639\" name=\"ONB Offboardee\">
+            <rule id=\"639\" last-modified-by=\"\" last-modified-date=\"\">
+                <access-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </access-group>
+                <target-group created-by=\"\" created-date=\"\" id=\"3861\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"45\" name=\"$$EVERYONE_ONB$$\"/>
+                <relationship/>
+                <include-self><![CDATA[false]]></include-self>
+                <exclude-login-user><![CDATA[false]]></exclude-login-user>
+                <access-group-level><![CDATA[0]]></access-group-level>
+                <target-group-level><![CDATA[0]]></target-group-level>
+                <filter/>
+                <target-population><![CDATA[EVERYONE_ONB]]></target-population>
+            </rule>
+        </role>
+        <role id=\"661\" name=\"PM-GM Employee All\">
+            <rule id=\"623\" last-modified-by=\"\" last-modified-date=\"\">
+                <access-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </access-group>
+                <target-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </target-group>
+                <relationship/>
+                <include-self><![CDATA[false]]></include-self>
+                <exclude-login-user><![CDATA[false]]></exclude-login-user>
+                <access-group-level><![CDATA[0]]></access-group-level>
+                <target-group-level><![CDATA[0]]></target-group-level>
+                <filter/>
+                <target-population><![CDATA[EVERYONE]]></target-population>
+            </rule>
+        </role>
+        <role id=\"778\" name=\"Proxy Access\">
+            <rule id=\"739\" last-modified-by=\"\" last-modified-date=\"\">
+                <access-group created-by=\"CAJ\" created-date=\"2022-10-11\" id=\"2522\" last-modified-by=\"RAM\" last-modified-date=\"2023-04-20\" member-count=\"52\" name=\"SUPER ADMIN\">
+                    <include-people-pool><![CDATA[(std_username = 68 AND IBT AND dpa AND vmu AND RAM AND SLJ AND mlu AND JSS AND wmu AND vin AND vsu AND rak AND smu AND COEREWARD AND ljo AND alc AND can AND NJA AND ALA AND BAN AND SKO AND dla AND JKH AND PNA AND tbo AND gmo AND jpi AND flo AND hsa AND mem AND MEM AND amm AND daa AND ijn AND IJN AND HCO AND NSI AND CAJ AND afa AND cab AND cbo AND jaa AND aif AND dsb AND cpa AND shs AND mye AND aih AND ALV AND bdo AND per AND MOK AND KAJ AND RSA AND CAL AND RLU AND MZI AND MRK AND AHE AND CSA)]]></include-people-pool>
+                    <include-people-pool><![CDATA[(std_username = COMPADMIN AND IPSADMIN AND SFADMIN AND GDSADMIN AND ONBADMIN)]]></include-people-pool>
+                </access-group>
+                <target-group created-by=\"\" created-date=\"\" id=\"4499\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"98\" name=\"Exclude Proxy\">
+                    <exclude-people-pool><![CDATA[(user = SLJ AND RAM AND IBT AND JSS AND COEREWARD AND SFADMIN AND smu)]]></exclude-people-pool>
+                </target-group>
+                <relationship/>
+                <include-self><![CDATA[false]]></include-self>
+                <exclude-login-user><![CDATA[false]]></exclude-login-user>
+                <access-group-level><![CDATA[0]]></access-group-level>
+                <target-group-level><![CDATA[0]]></target-group-level>
+                <filter/>
+                <target-population><![CDATA[Exclude Proxy]]></target-population>
+            </rule>
+        </role>
+        <role id=\"799\" name=\"ED - ESS\">
+            <rule id=\"799\" last-modified-by=\"\" last-modified-date=\"\">
+                <access-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </access-group>
+                <target-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </target-group>
+                <relationship/>
+                <include-self><![CDATA[false]]></include-self>
+                <exclude-login-user><![CDATA[false]]></exclude-login-user>
+                <access-group-level><![CDATA[0]]></access-group-level>
+                <target-group-level><![CDATA[0]]></target-group-level>
+                <filter><![CDATA[SELF]]></filter>
+                <target-population><![CDATA[everyone in SELF, EVERYONE]]></target-population>
+            </rule>
+            <rule id=\"800\" last-modified-by=\"alc\" last-modified-date=\"2023-01-05\">
+                <access-group created-by=\"JSS\" created-date=\"2022-10-07\" id=\"4585\" last-modified-by=\"JSS\" last-modified-date=\"2022-10-07\" member-count=\"2\" name=\"Grant: ED - HR Admin\">
+                    <include-people-pool><![CDATA[(user = ccrown AND mmikkelsen)]]></include-people-pool>
+                </access-group>
+                <access-group created-by=\"tbo\" created-date=\"2022-10-26\" id=\"4571\" last-modified-by=\"alc\" last-modified-date=\"2023-01-25\" member-count=\"11\" name=\"GED_User\">
+                    <include-people-pool><![CDATA[(user = GDSADMIN AND gmo AND tbo AND rreed AND jpi AND ijn AND ccrown AND alc AND PNA AND amm AND DR_3)]]></include-people-pool>
+                </access-group>
+                <target-group created-by=\"JSS\" created-date=\"2022-12-13\" id=\"4586\" last-modified-by=\"alc\" last-modified-date=\"2023-01-25\" member-count=\"13\" name=\"Target: ED - Demo Org. (Division = DIR_SALES)\">
+                    <include-people-pool><![CDATA[(hris_jobInfo$division = 1350146)]]></include-people-pool>
+                    <include-people-pool><![CDATA[(user = mmoore AND DR_2)]]></include-people-pool>
+                </target-group>
+                <relationship/>
+                <include-self><![CDATA[false]]></include-self>
+                <exclude-login-user><![CDATA[false]]></exclude-login-user>
+                <access-group-level><![CDATA[0]]></access-group-level>
+                <target-group-level><![CDATA[0]]></target-group-level>
+                <filter/>
+                <target-population><![CDATA[Target: ED - Demo Org. (Division = DIR_SALES)]]></target-population>
+            </rule>
+            <rule id=\"879\" last-modified-by=\"alc\" last-modified-date=\"2023-01-25\">
+                <access-group created-by=\"tbo\" created-date=\"2022-10-26\" id=\"4571\" last-modified-by=\"alc\" last-modified-date=\"2023-01-25\" member-count=\"11\" name=\"GED_User\">
+                    <include-people-pool><![CDATA[(user = GDSADMIN AND gmo AND tbo AND rreed AND jpi AND ijn AND ccrown AND alc AND PNA AND amm AND DR_3)]]></include-people-pool>
+                </access-group>
+                <target-group created-by=\"alc\" created-date=\"2023-01-25\" id=\"4568\" last-modified-by=\"alc\" last-modified-date=\"2023-01-25\" member-count=\"9\" name=\"Target: ED Approver/Signer\">
+                    <include-people-pool><![CDATA[(user = rreed AND ccrown AND mmanson AND mmoore AND mmikkelsen AND DR_1 AND DR_7 AND DR_10 AND DR_4)]]></include-people-pool>
+                </target-group>
+                <relationship/>
+                <include-self><![CDATA[false]]></include-self>
+                <exclude-login-user><![CDATA[false]]></exclude-login-user>
+                <access-group-level><![CDATA[0]]></access-group-level>
+                <target-group-level><![CDATA[0]]></target-group-level>
+                <filter/>
+                <target-population><![CDATA[Target: ED Approver/Signer]]></target-population>
+            </rule>
+        </role>
+        <role id=\"801\" name=\"EA - ESS\">
+            <rule id=\"802\" last-modified-by=\"\" last-modified-date=\"\">
+                <access-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </access-group>
+                <target-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </target-group>
+                <relationship/>
+                <include-self><![CDATA[false]]></include-self>
+                <exclude-login-user><![CDATA[false]]></exclude-login-user>
+                <access-group-level><![CDATA[0]]></access-group-level>
+                <target-group-level><![CDATA[0]]></target-group-level>
+                <filter/>
+                <target-population><![CDATA[EVERYONE]]></target-population>
+            </rule>
+        </role>
+        <role id=\"821\" name=\"SFCC Employee on Self\">
+            <rule id=\"823\" last-modified-by=\"JSS\" last-modified-date=\"2022-10-12\">
+                <access-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </access-group>
+                <target-group created-by=\"\" created-date=\"\" id=\"2022\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"105\" name=\"$$EVERYONE$$\">
+                    <include-people-pool><![CDATA[Everyone in the company]]></include-people-pool>
+                </target-group>
+                <relationship/>
+                <include-self><![CDATA[false]]></include-self>
+                <exclude-login-user><![CDATA[false]]></exclude-login-user>
+                <access-group-level><![CDATA[0]]></access-group-level>
+                <target-group-level><![CDATA[0]]></target-group-level>
+                <filter><![CDATA[SELF]]></filter>
+                <target-population><![CDATA[everyone in SELF, EVERYONE]]></target-population>
+            </rule>
+        </role>
+        <role id=\"898\" name=\"BMW_DEMO_Easy Docs\">
+            <rule id=\"938\" last-modified-by=\"JSS\" last-modified-date=\"2023-04-12\">
+                <access-group created-by=\"alc\" created-date=\"2023-01-05\" id=\"4560\" last-modified-by=\"JSS\" last-modified-date=\"2023-04-13\" member-count=\"16\" name=\"ED_Admin\">
+                    <include-people-pool><![CDATA[(std_username = tbo AND GDSADMIN AND gmo AND jpi AND daa AND SFADMIN AND bbrown AND ijn AND alc AND ccrown AND rreed AND mmackey AND mmanson AND mirubmw AND dilubmw AND shkebmw)]]></include-people-pool>
+                    <include-people-pool><![CDATA[(user = amm AND JSS)]]></include-people-pool>
+                </access-group>
+                <target-group created-by=\"\" created-date=\"\" id=\"4576\" last-modified-by=\"\" last-modified-date=\"\" member-count=\"47\" name=\"Target: EA - Region Europe\">
+                    <include-people-pool><![CDATA[(std_country = Germany AND Denmark AND United Kingdom AND France AND Belgium AND Netherlands)]]></include-people-pool>
+                </target-group>
+                <relationship/>
+                <include-self><![CDATA[false]]></include-self>
+                <exclude-login-user><![CDATA[false]]></exclude-login-user>
+                <access-group-level><![CDATA[0]]></access-group-level>
+                <target-group-level><![CDATA[0]]></target-group-level>
+                <filter/>
+                <target-population><![CDATA[Target: EA - Region Europe]]></target-population>
+            </rule>
+        </role>
+    </user>
+</user-role-granting>
