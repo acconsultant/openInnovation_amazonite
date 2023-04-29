@@ -22,7 +22,7 @@
 					<!-- List of Roles -->
 					<List busyIndicatorDelay="200" enableBusyIndicator="true" width="100%" justifyContent="Center" class="sapUiTinyMargin" items="{Roles>/roles/}" headerText="Roles" growing="false" growingThreshold="10" growingScrollToLoad="true">
 						<items>
-							<StandardListItem title="{Roles>roleName}" />
+							<StandardListItem title="{Roles>name}" />
 						</items>
 					</List>
 				</ScrollContainer>

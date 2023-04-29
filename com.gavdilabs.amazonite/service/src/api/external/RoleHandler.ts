@@ -93,8 +93,6 @@ export default class RoleHandler {
       roleData.getUserRolesReport
     );
 
-    console.log(parsedData);
-
     const rolesOut: IRolesOutRoot = {
       userId: userIdKey,
       roles: [],
@@ -108,11 +106,11 @@ export default class RoleHandler {
     ) {
       parsedData["user-role-granting"].user.role.forEach((role) => {
         rolesOut.roles.push({
-          roleName: role["@name"],
-          roleNameAccess: role.rule["access-group"]
+          name: role["@name"],
+          access: role.rule["access-group"]
             ? role.rule["access-group"]["@name"]
             : "",
-          roleNameTarget: role.rule["target-group"]
+          target: role.rule["target-group"]
             ? role.rule["target-group"]["@name"]
             : "",
         });
